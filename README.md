@@ -1,6 +1,6 @@
 
 # WithinPairMining
-
+Please follow the instruction to reproduce my expriments. Note that this project is based on [Powerful_benchmark](https://kevinmusgrave.github.io/powerful-benchmarker/).
 ## Installation
 ### Library
     torch >= 1.2
@@ -16,14 +16,12 @@
     pip install scipy
     pip install torchvision
 ### Prepare Dataset 
-#### CUB2011 dataset: 
 
-You can download CUB2011 from [CUB2011](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html).
-Please extract the dataset to `data/cub2011/`
-
-#### Cars196 dataset: 
-You can download Cars196 from [Cars196](https://ai.stanford.edu/~jkrause/cars/car_dataset.html).
-Please extract the dataset to `data/cars196`
+ - You can download CUB2011 from  [CUB2011](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html).
+   Please extract the dataset to `data/cub2011/`
+   
+ - You can download Cars196 from [Cars196](https://ai.stanford.edu/~jkrause/cars/car_dataset.html).
+   Please extract the dataset to `data/cars196/`
 
 ## Run
 ### CUB2011
@@ -53,7 +51,7 @@ Please extract the dataset to `data/cars196`
     --splits_to_eval [test] \
     --evaluate
 
-For other loss functions, you can replace the config file path in `--reproduce_results`. The alternatives are `exp_configs/triplet`, `exp_configs/contrast`, `exp_configs/margin`.
+For other loss functions, you can replace the config file path in `--reproduce_results`. The alternatives are `exp_configs/cub_triplet`, `exp_configs/cub_contrast`, `exp_configs/cub_margin`.
 
 ### Cars196
 ####  Example: Multi-similarity Loss
@@ -86,9 +84,10 @@ For other loss functions, you can replace the config file path in `--reproduce_r
 	--config_general [default, with_cars196] \
     --splits_to_eval [test] \
     --evaluate
+For other loss functions, you can replace the config file path in `--reproduce_results`. The alternatives are `exp_configs/car_triplet`, `exp_configs/car_contrast`, `exp_configs/car_margin`.
 
 ## Trained Models
-We release the trained models of this table, please download the trained models by [Trained Models](https://drive.google.com/drive/folders/17OTN1rprnRk2eazJ-Xspl4_jiAdC4t_G?usp=sharing). 
+We release our trained models in this table, please download the checkpoints from [Trained Models](https://drive.google.com/drive/folders/17OTN1rprnRk2eazJ-Xspl4_jiAdC4t_G?usp=sharing). 
 |                      | CUB2011                       |                      |                                |                             |                         |                        | Car196                        |                         |                         |                            |                        |                        |
 | :------------------: | :---------------------------: | :------------------: | :----------------------------: | :-------------------------: | :---------------------: | :--------------------: | :---------------------------: | :---------------------: | :---------------------: | :------------------------: | :--------------------: | :--------------------: |
 |                      | Concatenated <br>  (512 dim)  |                      |                                | Separated <br>   (128-dim)  |                         |                        | Concatenated <br>  (512-dim)  |                         |                         | Separated <br>  (128-dim)  |                        |                        |
