@@ -504,8 +504,7 @@ def bninception(num_classes=1000, pretrained='imagenet'):
         settings = pretrained_settings['bninception'][pretrained]
         assert num_classes == settings['num_classes'], \
             "num_classes should be {}, but is {}".format(settings['num_classes'], num_classes)
-        weight = torch.load('/root/paddlejob/workspace/env_run/bn_inception-52deb4733.pth')
-        model.load_state_dict(weight)
+        model.load_state_dict(model_zoo.load_url(settings['url']))
         model.input_space = settings['input_space']
         model.input_size = settings['input_size']
         model.input_range = settings['input_range']
