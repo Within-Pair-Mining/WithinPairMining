@@ -4,7 +4,7 @@ logging.getLogger().setLevel(logging.INFO)
 
 parser = argparse.ArgumentParser(allow_abbrev=False)
 parser.add_argument("--pytorch_home", type=str, default=None)
-parser.add_argument("--dataset_root", type=str, default="/root/paddlejob/workspace/env_run/data")
+parser.add_argument("--dataset_root", type=str, default="data")
 parser.add_argument("--root_experiment_folder", type=str, default="experiments")
 parser.add_argument("--global_db_path", type=str, default=None)
 parser.add_argument("--merge_argparse_when_resuming", default=False, action='store_true')
