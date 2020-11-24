@@ -52,7 +52,7 @@ Please follow the instruction to reproduce my experiments. Note that this projec
     --splits_to_eval [test] \
     --evaluate
 
-For other loss functions, you can replace the config file path in `--reproduce_results`. The alternatives are `exp_configs/cub_triplet`, `exp_configs/cub_contrast`, `exp_configs/cub_margin`.
+For other loss functions, you can replace the config file path in `--reproduce_results`. Alternatives: `exp_configs/cub_triplet`, `exp_configs/cub_contrast`, `exp_configs/cub_margin`.
 
 ### Cars196
 ####  Example: Multi-similarity Loss
@@ -86,7 +86,7 @@ For other loss functions, you can replace the config file path in `--reproduce_r
 	--config_general [default, with_cars196] \
     --splits_to_eval [test] \
     --evaluate
-For other loss functions,  you can replace the config file path in `--reproduce_results`. Alternatives are `exp_configs/car_triplet`, `exp_configs/car_contrast`, `exp_configs/car_margin`.
+For other loss functions,  you can replace the config file path in `--reproduce_results`. Alternatives: `exp_configs/car_triplet`, `exp_configs/car_contrast`, `exp_configs/car_margin`.
 
 ## Trained Models
 We release our training logs and trained models in this table, please download from [Trained Models](https://drive.google.com/drive/folders/12KOmtKT47ZD0oJb92kW2qlOD2FSu6YFR?usp=sharing). 
@@ -115,7 +115,6 @@ We release our training logs and trained models in this table, please download f
 | [**Margin + Ours**](https://drive.google.com/drive/folders/1L6G-jx5B2DMSIUu8JBbY40ft9eAscJaz?usp=sharing)           | **64\.24**                    | **34\.33**           | **23\.47**                     | **56\.50**                  | **29\.61**              | **18\.80**             |
 | MS                  | 65\.04                        | 35\.40               | 24\.70                         | 57\.60                      | 30\.84                  | 20\.15                 |
 | [**MS + Ours**](https://drive.google.com/drive/folders/1OXaSKaCIZglD2uBdCREFReNGTnWVQc9m?usp=sharing)           | **66\.02**                    | **36\.39**           | **25\.72**                     | **59\.77**                  | **32\.09**              | **21\.39**             |
-
 
 
 ---
