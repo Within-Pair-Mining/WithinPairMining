@@ -1,6 +1,6 @@
 
 # WithinPairMining
-Please follow the instruction to reproduce my expriments. Note that this project is based on [Powerful_benchmark](https://kevinmusgrave.github.io/powerful-benchmarker/).
+Please follow the instruction to reproduce my experiments. Note that this project is based on [Powerful_benchmark](https://kevinmusgrave.github.io/powerful-benchmarker/).
 ## Installation
 ### Library
     torch >= 1.2
