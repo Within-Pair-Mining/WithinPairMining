@@ -89,7 +89,7 @@ For other loss functions, you can replace the config file path in `--reproduce_r
 For other loss functions,  you can replace the config file path in `--reproduce_results`. Alternatives are `exp_configs/car_triplet`, `exp_configs/car_contrast`, `exp_configs/car_margin`.
 
 ## Trained Models
-We release our training logs and trained models in this table, please download from [Trained Models](https://drive.google.com/drive/folders/17OTN1rprnRk2eazJ-Xspl4_jiAdC4t_G?usp=sharing). 
+We release our training logs and trained models in this table, please download from [Trained Models](https://drive.google.com/drive/folders/12KOmtKT47ZD0oJb92kW2qlOD2FSu6YFR?usp=sharing). 
 
 
 |                      | CUB2011                       |                      |                                |                             |                         |                        |
